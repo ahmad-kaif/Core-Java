@@ -1,0 +1,16 @@
+
+
+
+javac -d . -cp . *.java -> 
+Purpose: This command compiles all the .java files
+in the current directory and places the generated 
+.class files into the appropriate package directories.
+
+
+
+To run: java -cp . packagepath.(classname) -> 
+Purpose: This command runs your compiled Java program.
+
+
+
+Professional Way: javac -d . -cp . *.java

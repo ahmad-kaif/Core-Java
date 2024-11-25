@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build and Run C++ or Java",
+        "type": "shell",
+        "command": "if [[ ${file} == *.cpp ]]; then mkdir -p \"${fileDirname}/src\" && c++ \"${file}\" -o \"${fileDirname}/src/${fileBasenameNoExtension}\" && \"${fileDirname}/src/${fileBasenameNoExtension}\"; elif [[ ${file} == *.java ]]; then mkdir -p \"${fileDirname}/src\" && javac -d \"${fileDirname}/src\" \"${file}\" && java -cp \"${fileDirname}/src\" ${fileBasenameNoExtension}; fi && exit 0",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
