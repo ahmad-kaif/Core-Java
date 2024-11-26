@@ -1,5 +1,6 @@
 How to compile  -> javac -d src -cp src Main.java //or  javac -d bin Main.java
 How to run -> java -cp src Main
+
 in this way all the .class file will reside in src folder
 
 to run tasks.json -> shift + cmd + B

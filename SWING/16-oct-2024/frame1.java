@@ -41,7 +41,7 @@ public class frame1 {
                 txt1.setText("");
             }
         }));
-        btn2.addActionListener((ActionListener) (new ActionListener() {
+        btn2.addActionListener( (new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
                 System.out.println(txt.getText());
